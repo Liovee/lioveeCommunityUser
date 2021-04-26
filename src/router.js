@@ -6,6 +6,9 @@ import About from './components/About.vue'
 import Welcome from './components/Welcome.vue'
 import Users from './components/User/Users.vue'
 import Ours from './components/User/Ours.vue'
+import Company from './components/Message/Company.vue'
+import Community from './components/Message/Community.vue'
+import Renthouse from './components/Message/Renthouse.vue'
 Vue.use(Router)
 
 
@@ -37,7 +40,10 @@ const router = new Router({
     children:[
         {path:'/welcome',component:Welcome},
         {path:'/users',component:Users},
-        {path:'/ours',component:Ours}
+        {path:'/ours',component:Ours},
+        {path:'/company',component:Company},
+        {path:'/community',component:Community},
+        {path:'/renthouse',component:Renthouse},
     ]},
     { path:'/about', component: About },
   ]

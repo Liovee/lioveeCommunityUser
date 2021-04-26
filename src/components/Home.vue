@@ -89,22 +89,29 @@ export default {
           path: 'users',
         },
         {
-          authName: "权限管理",
+          authName: "信息发布",
           children: [
             {
-              authName: "角色列表",
+              authName: "社区信息",
               children: [],
               id: 111,
               order: null,
-              path: "roles",
+              path: "community",
             },
             {
-              authName: "权限列表",
+              authName: "企业招聘",
               children: [],
               id: 112,
               order: null,
-              path: "rights",
+              path: "company",
             },
+            {
+              authName: "出租房屋",
+              children: [],
+              id: 113,
+              order: null,
+              path: "renthouse",
+            }
           ],
           id: 103,
           order: 2,

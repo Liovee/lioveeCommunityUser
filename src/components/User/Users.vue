@@ -34,19 +34,20 @@
       <el-table :data="userlist" border stripe>
         <el-table-column type="index"> </el-table-column>
         <el-table-column label="姓名" prop="username"> </el-table-column>
-        <el-table-column label="邮箱" prop="email"> </el-table-column>
+        <el-table-column label="家庭住址" prop="email"> </el-table-column>
         <el-table-column label="电话" prop="mobile"> </el-table-column>
+        <el-table-column label="余额" prop="money"> </el-table-column>
         <el-table-column label="角色" prop="role_name"> </el-table-column>
-        <el-table-column label="状态">
-          <template slot-scope="scope">
-            <!-- {{ scope.row }} -->
+        <!-- <el-table-column label="状态">
+          <template slot-scope="scope"> -->
+            <!-- {{ scope.row }}
             <el-switch
               v-model="scope.row.mg_state"
               @change="userStateChange(scope.row)"
             >
             </el-switch>
           </template>
-        </el-table-column>
+        </el-table-column> -->
         <el-table-column label="操作" width="180px">
           <template>
             <el-button
