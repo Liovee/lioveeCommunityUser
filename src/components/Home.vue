@@ -88,6 +88,7 @@ export default {
           order: 1,
           path: 'users',
         },
+        
         {
           authName: "信息发布",
           children: [
@@ -114,6 +115,51 @@ export default {
             }
           ],
           id: 103,
+          order: 2,
+          path: "rights",
+        },
+        {
+          authName: "请求对接",
+          children: [
+            {
+              authName: "对接查看",
+              children: [],
+              id: 114,
+              order: null,
+              path: "demand",
+            }
+          ],
+          id: 101,
+          order: 2,
+          path: "rights",
+        },
+        {
+          authName: "请求分析",
+          children: [
+            {
+              authName: "对接分析",
+              children: [],
+              id: 115,
+              order: null,
+              path: "anynis",
+            }
+          ],
+          id: 102,
+          order: 2,
+          path: "rights",
+        },
+        {
+          authName: "意见反馈",
+          children: [
+            {
+              authName: "反馈分析",
+              children: [],
+              id: 116,
+              order: null,
+              path: "retroaction",
+            }
+          ],
+          id: 145,
           order: 2,
           path: "rights",
         },

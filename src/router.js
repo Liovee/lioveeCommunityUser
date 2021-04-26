@@ -9,6 +9,9 @@ import Ours from './components/User/Ours.vue'
 import Company from './components/Message/Company.vue'
 import Community from './components/Message/Community.vue'
 import Renthouse from './components/Message/Renthouse.vue'
+import Demand from './components/Helpeach/Demand.vue'
+import Anynis from './components/Request/Anynis.vue'
+import Retroaction from './components/Feedback/Retroaction.vue'
 Vue.use(Router)
 
 
@@ -44,6 +47,9 @@ const router = new Router({
         {path:'/company',component:Company},
         {path:'/community',component:Community},
         {path:'/renthouse',component:Renthouse},
+        {path:'/demand',component:Demand},
+        {path:'/anynis',component:Anynis},
+        {path:'/retroaction',component:Retroaction},
     ]},
     { path:'/about', component: About },
   ]

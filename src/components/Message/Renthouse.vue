@@ -14,6 +14,7 @@
         <el-table-column label="联系人" prop="username"> </el-table-column>
         <el-table-column label="房间号" prop="email"> </el-table-column>
         <el-table-column label="联系电话" prop="mobile"> </el-table-column>
+        <el-table-column label="意向租房人" prop="username"> </el-table-column>
         </el-table>
         <el-dialog title="添加用户" :visible.sync="addDialogVisible" width="50%">
       <!-- 内容主体区域 -->
