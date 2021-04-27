@@ -37,6 +37,14 @@
           >
         </el-row>
       </div>
+       <div class="marginB">
+        <el-row :gutter="20">
+          <el-col :span="12"
+            ><div class="grid-content bg-purple">余额:</div></el-col
+          >
+          
+        </el-row>
+      </div>
       <el-button @click="addDialogVisible = true" type="primary"
         >修改</el-button
       >

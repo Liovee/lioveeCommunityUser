@@ -8,7 +8,7 @@
           src="../assets/logo1.jpg"
           alt=""
         />
-        <span>Liovee社区后台管理系统</span>
+        <span>Liovee社区用户系统</span>
       </div>
       <el-button type="info" @click="logout"> 退出</el-button>
     </el-header>
@@ -76,13 +76,13 @@ export default {
               order: null,
               path: 'ours'
             },
-            {
+            /*{
               authName: "用户列表",
               children: [],
               id: 110,
               order: null,
               path: 'users',
-            }
+            }*/
           ],
           id: 125,
           order: 1,
@@ -90,7 +90,7 @@ export default {
         },
         
         {
-          authName: "信息发布",
+          authName: "信息查询",
           children: [
             {
               authName: "社区信息",
@@ -119,10 +119,10 @@ export default {
           path: "rights",
         },
         {
-          authName: "请求对接",
+          authName: "请求帮助",
           children: [
             {
-              authName: "对接查看",
+              authName: "请求帮助",
               children: [],
               id: 114,
               order: null,
@@ -134,10 +134,10 @@ export default {
           path: "rights",
         },
         {
-          authName: "请求分析",
+          authName: "充值缴费",
           children: [
             {
-              authName: "对接分析",
+              authName: "充值缴费",
               children: [],
               id: 115,
               order: null,
@@ -152,7 +152,7 @@ export default {
           authName: "意见反馈",
           children: [
             {
-              authName: "反馈分析",
+              authName: "意见反馈",
               children: [],
               id: 116,
               order: null,
@@ -176,7 +176,7 @@ export default {
     };
   },
   created() {
-    this.getMenuList();
+    //this.getMenuList();
     this.activePath = window.sessionStorage.getItem("activePath");
   },
   methods: {

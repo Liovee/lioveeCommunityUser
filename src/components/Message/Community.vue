@@ -2,13 +2,12 @@
   <div>
     <el-breadcrumb separator-class="el-icon-arrow-right">
       <el-breadcrumb-item :to="{ path: '/home' }">首页</el-breadcrumb-item>
-      <el-breadcrumb-item>信息发布</el-breadcrumb-item>
+      <el-breadcrumb-item>信息查询</el-breadcrumb-item>
       <el-breadcrumb-item>社区信息</el-breadcrumb-item>
     </el-breadcrumb>
     <el-card>
-        <el-input v-model="input" placeholder="请输入内容"></el-input>
-         <el-button  type="primary">添加文件</el-button>
-         <el-button class="punlishB" type="primary">发布</el-button>
+        <div class="title">通知消息</div>
+         <div>管理员发布的消息的集合 包含发布人 时间 具体内容</div>
     </el-card>
   </div>
 </template>
@@ -34,5 +33,8 @@ export default {
 .el-button{
    /* margin-left:1200px;*/
     margin-top:20px;
+}
+.title{
+  margin: 0 auto;
 }
 </style>

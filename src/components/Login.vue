@@ -1,9 +1,41 @@
 <template>
   <div class="main">
     <div class="login_container">
-      <div class="login_box">
+      <div class="login_box" v-show="!true">
         <!--登录表单区域-->
         <div>请登录！</div>
+        <el-form
+          ref="loginFormRef"
+          :rules="loginFormRules"
+          class="login_form"
+          label-width="0px"
+          :model="loginForm"
+        >
+          <!--用户名 -->
+          <el-form-item prop="username">
+            <el-input
+              v-model="loginForm.username"
+              prefix-icon="el-icon-user-solid"
+            ></el-input>
+          </el-form-item>
+          <!--密码 -->
+          <el-form-item prop="password">
+            <el-input
+              type="password"
+              v-model="loginForm.password"
+              prefix-icon="el-icon-s-goods"
+            ></el-input>
+          </el-form-item>
+          <el-form-item>
+            <el-button @click="login" type="primary">登录</el-button>
+            <el-button @click="resetLogin" type="primary">重置</el-button>
+            <!-- <el-button @click="VLogin" type="primary">游客登陆</el-button> -->
+          </el-form-item>
+        </el-form>
+      </div>
+      <div class="login_box" v-show="true">
+        <!--登录表单区域-->
+        <div>请注册！</div>
         <el-form
           ref="loginFormRef"
           :rules="loginFormRules"
@@ -41,6 +73,7 @@ import axios from 'axios'
 export default {
   data() {
     return {
+      true:true,
       loginForm: {
         username: 'admin',
         password: '123456'
