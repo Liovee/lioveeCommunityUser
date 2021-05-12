@@ -10,6 +10,7 @@
         />
         <span>Liovee社区用户系统</span>
       </div>
+      <el-button type="primary"  style="position:relative;left:600px;"> 我的消息</el-button>
       <el-button type="info" @click="logout"> 退出</el-button>
     </el-header>
     <el-container>

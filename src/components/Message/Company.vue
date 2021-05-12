@@ -6,8 +6,22 @@
       <el-breadcrumb-item>企业招聘</el-breadcrumb-item>
     </el-breadcrumb>
     <el-card>
-        <div class="title">通知消息</div>
-         <div>管理员发布的消息的集合 包含发布人 公司名称 时间 具体内容 </div>
+      <div class="title">企业招聘</div>
+      <div class="message">
+        <div class="avatar">
+          <el-avatar icon="el-icon-user-solid"></el-avatar>
+        </div>
+        <div class="detail">
+          <div>管理员名称</div>
+          <div>公司名称</div>
+          <div>content信息 sadfafadfada</div>
+        </div>
+        <div>
+          <div>相关文件</div>
+          <div>文件名</div>
+          <el-button type="primary">下载</el-button>
+        </div>
+      </div>
     </el-card>
   </div>
 </template>
@@ -34,7 +48,16 @@ export default {
    /* margin-left:1200px;*/
     margin-top:20px;
 }
-.title{
+.title {
   margin: 0 auto;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.message {
+  width: 500px;
+  display: flex;
+}
+.avatar {
+  height: 100%;
 }
 </style>
